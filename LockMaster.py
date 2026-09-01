@@ -139,7 +139,8 @@ app = tk.Tk()
 # Set window title with lock emoji
 app.title("LockMaster")
 # Set the window icon using the resource_path function
-app.iconbitmap(r'D:\Nammu\LockMaster\icon32.ico')
+if os.path.exists(r'D:\Nammu\LockMaster\icon32.ico'):
+    app.iconbitmap(r'D:\Nammu\LockMaster\icon32.ico')
 # Disable window resizing
 app.resizable(False, False)
 
